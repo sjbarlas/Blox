@@ -1,13 +1,15 @@
 PFont font;
+int i = 0; // counter
 
 void setup()
 {
   size(500,500);
   font = loadFont("KaiTi-20.vlw");
 }
-int i = 0;
+
 void draw()
 {
+  // Blinking text
   i = i+1;
   if(i > 50)
   {
@@ -21,9 +23,6 @@ void draw()
   }
   
   background(0);
-//  int m = millis();
-//  noStroke();
-//  fill(m % 1000);
   textFont(font, 20);
   text("Amazing Game", 215, 200);
 }

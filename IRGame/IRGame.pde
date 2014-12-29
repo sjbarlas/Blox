@@ -1,5 +1,6 @@
 PFont font;
 int i = 0; // counter
+int x = 0;
 
 void setup()
 {
@@ -9,6 +10,8 @@ void setup()
 
 void draw()
 {
+  x +=1;
+  
   // Blinking text
   i = i+1;
   if(i > 50)
@@ -25,4 +28,23 @@ void draw()
   background(0);
   textFont(font, 20);
   text("Amazing Game", 180, 100);
+  
+  fill(0, 255, 0);
+  rect(x, 190, 10, 10);
+  
+  wrap();
+}
+
+// movement of rect
+void wrap()
+{
+    if(x >= 500)
+    {
+      x = 0;
+    }
+    
+    if(x > width)
+    {
+      x = 0;
+    }
 }

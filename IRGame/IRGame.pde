@@ -24,5 +24,5 @@ void draw()
   
   background(0);
   textFont(font, 20);
-  text("Amazing Game", 215, 200);
+  text("Amazing Game", 180, 100);
 }

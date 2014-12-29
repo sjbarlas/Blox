@@ -42,9 +42,4 @@ void wrap()
     {
       x = 0;
     }
-    
-    if(x > width)
-    {
-      x = 0;
-    }
 }

@@ -33,6 +33,7 @@ void draw()
   rect(x, 190, 10, 10);
 
   wrap();
+  spiderman();
 }
 
 // movement of rect

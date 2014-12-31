@@ -27,9 +27,9 @@ void draw()
   
   background(0);
   textFont(font, 20);
-  text("Amazing Game", 180, 100);
+  text("SPIDERMAN", width/2-50, 100);
   
-  fill(0, 255, 0);
+  //fill(0, 255, 0);
   rect(x, 190, 10, 10);
   
   wrap();

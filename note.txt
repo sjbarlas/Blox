@@ -1,0 +1,14 @@
+A project that looks great. All the art and is 100% procedural or self drawn and looks beautiful. There a significant amount of clever animation or gameplay (if the project is a game). For example multiple "modes" or "screens". The assignment has lots of functionality. There is depth to the gameplay. For example, progression and powerups. The code is organised into classes that make use of inheritance and polymorphism. There is a lot of novelty and originality. All the code is written by the you. You will have used PVectors, transforms and classes to create autonomous elements in the assignment. You will loading content from text files. You will have used git extensively. Everything works. Example: A twin stick shooter
+
+- You must include a splash screen with instructions, game screen(s) and a game over screen
+- You must write all the code yourself, though you can take code from the example projects we made in the class. If you use code we developed in the class, you must modify it substantially yourself.
+- You should make all the art yourself. I suggest you procedurally draw everything to make a vector graphics style game.
+- If you are good at drawing, you can make your own sprites as an alternative to procedurally drawing everything
+- Keep in mind the theme for this years Games Fleadh is "Endless Runner" so you might want to make one of these and enter it into Games Fleadh too!
+- You can use the keyboard or mouse to control your game. I haven't figured out how to reprogram the controllers on the arcade cabinet yet, so you should start with the starter code, which loads the keyboard bindings from a properties file.
+- You should try and use git to manage your source code for the project and submit a link to your git repo. I will look at your git logs to see how much time you have spend on this assignment.
+- You should spend at least 2 full days on the assignment.
+- The assignment is due to be demoed in the lab the week of 26 January.
+
+Marks:
+Code: 30% Gameplay:30% Project management: 20% Visuals: 20%

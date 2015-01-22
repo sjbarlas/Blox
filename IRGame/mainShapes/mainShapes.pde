@@ -26,7 +26,7 @@ void draw()
     s.display();
   }
   
-  if(shapes.size() > 10) // remove after 10 shapes are on screen
+  if(shapes.size() > -10) // remove after 10 shapes are on screen
   {
     shapes.remove(0);
   }

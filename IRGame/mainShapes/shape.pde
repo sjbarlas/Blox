@@ -13,5 +13,6 @@ class Shape
   // FUNCTIONS
   void display()
   {
+    fill(random(255), random(255), random(255));
   } // end display()
 } // end Shape

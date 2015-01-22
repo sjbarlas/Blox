@@ -18,6 +18,7 @@ void draw()
   background(0);
   
   shapes.add(new Block());
+  shapes.add(new Circle());
   
   for(int i = 0; i < shapes.size(); i++)
   {

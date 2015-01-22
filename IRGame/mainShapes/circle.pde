@@ -2,10 +2,10 @@ class Circle extends Shape
 {
  void display()
   {
-    fill(random(255), random(255), random(255));
-    ellipse(pos.x, pos.y, 100, 100);
+    super.display();
+    ellipse(pos.x, pos.y, 20, 20);
   } // end display()
-} // end class Ball
+} // end class Circle
 
 /* Override functions - execute same function in child class 
 rather than the one in parent class 

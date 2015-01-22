@@ -1,16 +1,13 @@
 class Shape 
 {
   // GLOBAL VARIABLES
-  float x;
-  float y;
-  float speedX;
-  float speedY;
+  PVector pos; // position of the shapes
+  PVector speed;
 
   // CONSTRUCTOR
   Shape()
   {
-    x = random(0, 600);
-    y = random(0, 600);
+    pos = new PVector(random(0, 600), random(0, 600));
   } // end Constructor
 
   // FUNCTIONS

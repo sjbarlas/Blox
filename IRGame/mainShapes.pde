@@ -4,12 +4,28 @@ PFont font;
 
 ArrayList shapes;
 
+// resolution
+boolean devMode = false;
+boolean sketchFullScreen() {
+  return ! devMode;
+}
+
 void setup()
 {
   font = loadFont("BuxtonSketch-48.vlw");
   size(600, 600);
   shapes = new ArrayList();
   smooth();
+  
+  // res
+  if (devMode)
+  {
+    size(600, 600);
+  }
+  else
+  {
+    size(displayWidth, displayHeight);
+  }
 }
 
 void draw()
@@ -18,7 +34,6 @@ void draw()
   background(0);
   
   shapes.add(new Block());
-  shapes.add(new Circle());
   
   for(int i = 0; i < shapes.size(); i++)
   {
@@ -26,7 +41,7 @@ void draw()
     s.display();
   }
   
-  if(shapes.size() > -10) // remove after 10 shapes are on screen
+  if(shapes.size() > 10) // remove after 10 shapes are on screen
   {
     shapes.remove(0);
   }

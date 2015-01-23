@@ -18,6 +18,7 @@ boolean sketchFullScreen() {
 void setup()
 {
   setUpPlayerControllers();
+  
   font = loadFont("BuxtonSketch-48.vlw");
   font2 = loadFont("CenturyGothic-20.vlw");
   size(600, 600);

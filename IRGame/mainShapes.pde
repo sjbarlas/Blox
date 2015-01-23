@@ -7,6 +7,7 @@ ArrayList shapes;
 ArrayList<Player> players = new ArrayList<Player>();
 boolean[] keys = new boolean[526];
 
+
 boolean Instructions = false;
 boolean Home = true;
 
@@ -35,7 +36,7 @@ void setup()
   {
     size(displayWidth, displayHeight);
   }
-}
+} // end setup
 
 void draw()
 {
@@ -48,7 +49,7 @@ void draw()
   frameRate(10);
   background(0);
 
-  if (Home = true)
+  if (Home == true)
   {
     shapes.add(new Block());
 
@@ -68,7 +69,7 @@ void draw()
     fill(255, 0, 0);
     textFont(font2, 20);
     text("Press START button to play", 400, 300);
-  }
+  } // end Home
 
   if (keyPressed)
   { 
@@ -76,8 +77,8 @@ void draw()
     {
       Instructions = true;
       Home = false;
-    }
-  }
+    } // end key
+  } // end keyPessed
 } // end draw
 
 void keyPressed()

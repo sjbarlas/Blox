@@ -1,5 +1,3 @@
-//https://processing.org/examples/multipleparticlesystems.html
-
 PFont font, font2;
 
 ArrayList shapes;

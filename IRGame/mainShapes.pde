@@ -64,17 +64,9 @@ void draw()
 
   textFont(font, 48);
   text("Blox", width/3, height/3);
-  fill(84, 84, 84);
-  rect(410, 260, 100, 50);
   fill(255, 0, 0);
   textFont(font2, 20);
-  text("PLAY", width/3+6, height/3+6, 130, 70);
-
-  if ((mouseX >= 410) && (mouseX <= 510) && (mouseY >= 260) && (mouseY >= 310))
-  {
-    move = false;
-    fill(0);
-  }
+  text("Press START button to play", width/3+6, height/3+6, 130, 70);
 } // end draw
 
 void keyPressed()

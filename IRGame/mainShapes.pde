@@ -7,6 +7,9 @@ ArrayList shapes;
 ArrayList<Player> players = new ArrayList<Player>();
 boolean[] keys = new boolean[526];
 
+boolean Instructions = false;
+boolean Home = true;
+
 
 // resolution
 boolean devMode = false;
@@ -45,24 +48,36 @@ void draw()
   frameRate(10);
   background(0);
 
-  shapes.add(new Block());
-
-  for (int i = 0; i < shapes.size (); i++)
+  if (Home = true)
   {
-    Shape s = (Shape) shapes.get(i);
-    s.display();
+    shapes.add(new Block());
+
+    for (int i = 0; i < shapes.size (); i++)
+    {
+      Shape s = (Shape) shapes.get(i);
+      s.display();
+    }
+
+    if (shapes.size() > 10) // remove after 10 shapes are on screen
+    {
+      shapes.remove(0);
+    }
+
+    textFont(font, 48);
+    text("Blox", width/3, height/3);
+    fill(255, 0, 0);
+    textFont(font2, 20);
+    text("Press START button to play", 400, 300);
   }
 
-  if (shapes.size() > 10) // remove after 10 shapes are on screen
-  {
-    shapes.remove(0);
+  if (keyPressed)
+  { 
+    if (key == 'q' || key == 'Q')
+    {
+      Instructions = true;
+      Home = false;
+    }
   }
-
-  textFont(font, 48);
-  text("Blox", width/3, height/3);
-  fill(255, 0, 0);
-  textFont(font2, 20);
-  text("Press START button to play", 400, 300);
 } // end draw
 
 void keyPressed()

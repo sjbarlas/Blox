@@ -7,7 +7,6 @@ ArrayList shapes;
 ArrayList<Player> players = new ArrayList<Player>();
 boolean[] keys = new boolean[526];
 
-boolean move = true;
 
 // resolution
 boolean devMode = false;
@@ -18,7 +17,7 @@ boolean sketchFullScreen() {
 void setup()
 {
   setUpPlayerControllers();
-  
+
   font = loadFont("BuxtonSketch-48.vlw");
   font2 = loadFont("CenturyGothic-20.vlw");
   size(600, 600);
@@ -46,21 +45,18 @@ void draw()
   frameRate(10);
   background(0);
 
-  if (move = true)
+  shapes.add(new Block());
+
+  for (int i = 0; i < shapes.size (); i++)
   {
-    shapes.add(new Block());
+    Shape s = (Shape) shapes.get(i);
+    s.display();
+  }
 
-    for (int i = 0; i < shapes.size (); i++)
-    {
-      Shape s = (Shape) shapes.get(i);
-      s.display();
-    }
-
-    if (shapes.size() > 10) // remove after 10 shapes are on screen
-    {
-      shapes.remove(0);
-    }
-  } // end move
+  if (shapes.size() > 10) // remove after 10 shapes are on screen
+  {
+    shapes.remove(0);
+  }
 
   textFont(font, 48);
   text("Blox", width/3, height/3);
@@ -126,3 +122,4 @@ void setUpPlayerControllers()
     players.add(p);
   }
 }
+

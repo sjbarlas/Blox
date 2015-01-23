@@ -12,7 +12,7 @@ boolean Active = false;
 
 int points = 0;
 int paddle = 200;
-int[][] blox = new int [10][10];
+int[][] blox = new int [54][5];
 
 // resolution
 boolean devMode = false;

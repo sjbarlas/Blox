@@ -5,9 +5,9 @@ void Game()
   textSize(60);
   text("POINTS: " + points, width/2, height/2);
 
-  for (int i = 0; i < 10; i++)
+  for (int i = 0; i < 54; i++)
   {
-    for (int j = 0; j < 10; j++)
+    for (int j = 0; j < 5; j++)
     {
       if (Active == false)
       {

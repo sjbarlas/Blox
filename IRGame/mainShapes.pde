@@ -70,7 +70,7 @@ void draw()
   textFont(font2, 20);
   text("PLAY", width/3+6, height/3+6, 130, 70);
 
-  if ((mouseX >= (width/3+2)) && (mouseX <= ((width/3+2) + 100)) && (mouseY >= (height/3+2)) && (mouseY >= (height/3+2) + 50))
+  if ((mouseX >= 410) && (mouseX <= 510) && (mouseY >= 260) && (mouseY >= 310))
   {
     move = false;
     fill(0);
@@ -134,4 +134,3 @@ void setUpPlayerControllers()
     players.add(p);
   }
 }
-

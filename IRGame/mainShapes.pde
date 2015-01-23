@@ -81,6 +81,7 @@ void draw()
   } // end keyPessed
 } // end draw
 
+// controls and XML
 void keyPressed()
 {
   keys[keyCode] = true;

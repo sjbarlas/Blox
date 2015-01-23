@@ -1,3 +1,4 @@
+// controls and XML
 class Player
 {
   PVector pos;

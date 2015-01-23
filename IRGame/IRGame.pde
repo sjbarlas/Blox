@@ -19,7 +19,7 @@ void Game()
     } // end for
   } // end for
 
-  rect(mouseX-paddle/2, height-16, paddle, height);
+  rect(mouseX-paddle/2, height-25, paddle, height);
 
   if (Active == true)
   {
@@ -76,7 +76,7 @@ void Game()
 void mouseClicked()
 {
   bSpeedX = 10;
-  bSpeedY = 20;
+  bSpeedY = 50;
   Active = true;
 }
 

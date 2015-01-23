@@ -13,6 +13,8 @@ boolean Active = false;
 int points = 0;
 int paddle = 200;
 int[][] blox = new int [54][5];
+int ballX, ballY;
+float bSpeedX, bSpeedY;
 
 // resolution
 boolean devMode = false;

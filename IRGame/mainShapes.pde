@@ -7,10 +7,11 @@ ArrayList shapes;
 ArrayList<Player> players = new ArrayList<Player>();
 boolean[] keys = new boolean[526];
 
-
+boolean Home = false;
 boolean Instructions = false;
-boolean Home = true;
+boolean Game = true;
 
+int points = 0;
 
 // resolution
 boolean devMode = false;
@@ -79,6 +80,8 @@ void draw()
       Home = false;
     } // end key
   } // end keyPessed
+
+  Game();
 } // end draw
 
 // controls and XML

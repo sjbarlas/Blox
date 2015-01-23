@@ -15,7 +15,7 @@ void Game()
         fill(random(255), random(255), random(255));
       }
 
-      rect(i*25, j*25, 25, 25);
+      rect(i*25, j*25+25, 25, 25);
     } // end for
   } // end for
 
@@ -68,9 +68,9 @@ void Game()
         blox[i][j] = 0;
         points++;
         bSpeedY = -bSpeedY;
-      }
-    }
-  }
+      } // end if
+    } // end for
+  } // end for
 } // end Game
 
 void mouseClicked()

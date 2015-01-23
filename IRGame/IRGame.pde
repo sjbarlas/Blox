@@ -30,7 +30,7 @@ void Game()
       points++;
     } // end if
 
-    if (ballY<0)
+    if (ballY < 0)
     {
       bSpeedY = -bSpeedY;
     } // end if

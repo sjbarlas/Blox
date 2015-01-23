@@ -48,4 +48,9 @@ void draw()
   
   textFont(font, 48);
   text("Blox", width/3, height/3);
+  fill(255);
+  rect(width/3+2, height/3+2, 100, 50);
+  fill(random(255), random(255), random(255));
+  text("PLAY", width/3+6, height/3+6, 130, 70);
+  
 }

@@ -66,7 +66,7 @@ void draw()
   text("Blox", width/3, height/3);
   fill(255, 0, 0);
   textFont(font2, 20);
-  text("Press START button to play", width/3+6, height/3+6, 130, 70);
+  text("Press START button to play", 400, 300);
 } // end draw
 
 void keyPressed()

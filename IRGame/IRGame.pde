@@ -40,6 +40,7 @@ void Game()
       bSpeedX = -bSpeedX;
     } // end if
   } // end if
+
   else 
   {
     bSpeedX = 0;

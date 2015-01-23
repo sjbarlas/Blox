@@ -8,8 +8,10 @@ boolean[] keys = new boolean[526];
 boolean Home = false;
 boolean Instructions = false;
 boolean Game = true;
+boolean Active = false;
 
 int points = 0;
+int[][] blox = new int [10][10];
 
 // resolution
 boolean devMode = false;

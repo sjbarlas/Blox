@@ -16,7 +16,11 @@ void Game()
       }
 
       rect(i*25, j*25, 25, 25);
+      
     }
   }
+  
+  rect(mouseX-paddle/2, height-16, paddle, height);
+  
 } // end Game
 

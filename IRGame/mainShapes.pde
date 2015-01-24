@@ -1,4 +1,4 @@
-// Instructions dekho
+// Instructions dekho > dekha
 
 PFont font, font2;
 
@@ -71,7 +71,7 @@ void draw()
       shapes.remove(0);
     }
 
-    textFont(font, 48);
+    textFont(font, 200);
     text("Blox", width/3, height/3);
     fill(255, 0, 0);
     textFont(font2, 20);

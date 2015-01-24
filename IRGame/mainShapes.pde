@@ -29,7 +29,7 @@ void setup()
 {
   setUpPlayerControllers();
 
-  font = loadFont("BuxtonSketch-48.vlw");
+  font = loadFont("BuxtonSketch-200.vlw");
   font2 = loadFont("CenturyGothic-20.vlw");
   size(600, 600);
   shapes = new ArrayList();

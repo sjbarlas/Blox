@@ -30,7 +30,7 @@ void setup()
   setUpPlayerControllers();
 
   font = loadFont("BuxtonSketch-200.vlw");
-  font2 = loadFont("CenturyGothic-20.vlw");
+  font2 = loadFont("KaiTi-50.vlw");
   size(600, 600);
   shapes = new ArrayList();
   smooth();
@@ -75,7 +75,7 @@ void draw()
     text("Blox", width/3, height/3);
     fill(255, 0, 0);
     textFont(font2, 20);
-    text("Press START button to play", 400, 300);
+    text("Press START button to play", 550, 300);
   } // end Home
 
   if (keyPressed)

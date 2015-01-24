@@ -7,9 +7,9 @@ ArrayList shapes;
 ArrayList<Player> players = new ArrayList<Player>();
 boolean[] keys = new boolean[526];
 
-boolean Home = false;
+boolean Home = true;
 boolean Instructions = false;
-boolean Game = true;
+boolean Game = false;
 boolean Active = false;
 boolean G_Over = false;
 
@@ -82,12 +82,10 @@ void draw()
   { 
     if (key == 'q' || key == 'Q')
     {
-      Instructions = true;
+      Game = true;
       Home = false;
     } // end key
   } // end keyPessed
-
-  Game();
 } // end draw
 
 // controls and XML

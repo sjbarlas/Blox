@@ -1,6 +1,6 @@
 void Game()
 { 
-  if (Game = true)
+  if (Game == true)
   {
     background(0);
 
@@ -81,7 +81,7 @@ void Game()
 
 void mouseClicked()
 {
-  if (Game = true)
+  if (Game == true)
   {
     bSpeedX = 10;
     bSpeedY = 50;

@@ -11,6 +11,7 @@ boolean Home = false;
 boolean Instructions = false;
 boolean Game = true;
 boolean Active = false;
+boolean G_Over = false;
 
 int points = 0;
 int paddle = 200;

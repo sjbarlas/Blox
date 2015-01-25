@@ -75,10 +75,20 @@ void draw()
 
     textFont(font, 200);
     text("Blox", width/3, height/3);
+    line(460, 260, 900, 260);
 
-    fill(255, 0, 0);
+    fill(255, 255, 0);
     textFont(font2, 100);
-    text("Press START button to play", 50, 700);
+    text("Press START button to play", 30, 700);
+    
+    line(0, 700, width, 700);
+    line(0, 710, width, 710);
+    line(0, 720, width, 720);
+    line(0, 730, width, 730);
+    line(0, 740, width, 740);
+    line(0, 750, width, 750);
+    line(0, 760, width, 760);
+    
   } // end Home
 
   if (keyPressed)

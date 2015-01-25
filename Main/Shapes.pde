@@ -23,7 +23,7 @@ class Block extends Shape
   void display()
   {
     super.display();
-    rect(pos.x, pos.y, 100, 100);
+    rect(pos.x, pos.y, 50, 50);
   } // end display()
 } // end class Block
 

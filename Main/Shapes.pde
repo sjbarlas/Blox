@@ -2,7 +2,6 @@ class Shape
 {
   // GLOBAL VARIABLES
   PVector pos; // position of the shapes
-  //PVector speed;
 
   // CONSTRUCTOR
   Shape()
@@ -23,7 +22,7 @@ class Block extends Shape
   void display()
   {
     super.display();
-    rect(pos.x, pos.y, 50, 50);
+    rect(pos.x, pos.y, 70, 70);
   } // end display()
 } // end class Block
 

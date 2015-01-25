@@ -2,7 +2,7 @@ class Shape
 {
   // GLOBAL VARIABLES
   PVector pos; // position of the shapes
-  PVector speed;
+  //PVector speed;
 
   // CONSTRUCTOR
   Shape()

@@ -32,7 +32,7 @@ void setup()
   setUpPlayerControllers();
 
   font = loadFont("BuxtonSketch-200.vlw");
-  font2 = loadFont("KaiTi-50.vlw");
+  font2 = loadFont("KaiTi-100.vlw");
   size(600, 600);
   shapes = new ArrayList();
   smooth();
@@ -68,7 +68,7 @@ void draw()
       s.display();
     }
 
-    if (shapes.size() > 11) // remove after 15 shapes are on screen
+    if (shapes.size() > 11) // remove after 11 shapes are on screen
     {
       shapes.remove(0);
     }
@@ -77,8 +77,8 @@ void draw()
     text("Blox", width/3, height/3);
 
     fill(255, 0, 0);
-    textFont(font2, 50);
-    text("Press START button to play", 350, 590);
+    textFont(font2, 100);
+    text("Press START button to play", 50, 700);
   } // end Home
 
   if (keyPressed)

@@ -13,7 +13,7 @@ boolean Game = false;
 boolean Active = false;
 boolean G_Over = false;
 
-int i = 0;
+int i = 10;
 
 int points = 0;
 int paddle = 200;
@@ -49,6 +49,8 @@ void setup()
 
 void draw()
 {
+  smooth();
+
   for (Player player : players)
   {
     player.update();
@@ -73,6 +75,14 @@ void draw()
       shapes.remove(0);
     }
 
+    for (int x = 0; x < width; x+=i)
+    {
+      for (int y = 0; y < height; y+=i)
+      {
+        line(x + 0, y + 0, x + 0, y + 0);
+      } //  end for
+    } // end for
+
     textFont(font, 200);
     text("Blox", width/3, height/3);
     line(460, 260, 900, 260);
@@ -80,15 +90,7 @@ void draw()
     fill(255, 255, 0);
     textFont(font2, 100);
     text("Press START button to play", 30, 700);
-    
-    line(0, 700, width, 700);
-    line(0, 710, width, 710);
-    line(0, 720, width, 720);
-    line(0, 730, width, 730);
-    line(0, 740, width, 740);
-    line(0, 750, width, 750);
-    line(0, 760, width, 760);
-    
+
   } // end Home
 
   if (keyPressed)

@@ -78,7 +78,6 @@ void Game()
 
 void mouseClicked()
 {
-
   bSpeedX = 10;
   bSpeedY = 50;
   Active = true;

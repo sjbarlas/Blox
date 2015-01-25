@@ -13,6 +13,8 @@ boolean Game = false;
 boolean Active = false;
 boolean G_Over = false;
 
+int i = 0;
+
 int points = 0;
 int paddle = 200;
 int[][] blox = new int [54][5];
@@ -66,16 +68,17 @@ void draw()
       s.display();
     }
 
-    if (shapes.size() > 15) // remove after 15 shapes are on screen
+    if (shapes.size() > 11) // remove after 15 shapes are on screen
     {
       shapes.remove(0);
     }
 
     textFont(font, 200);
     text("Blox", width/3, height/3);
+
     fill(255, 0, 0);
-    textFont(font2, 20);
-    text("Press START button to play", 550, 300);
+    textFont(font2, 50);
+    text("Press START button to play", 350, 590);
   } // end Home
 
   if (keyPressed)

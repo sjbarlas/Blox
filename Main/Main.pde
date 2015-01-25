@@ -1,86 +1,149 @@
-void Game()
-{ 
+// Instructions dekho > dekha
+
+PFont font, font2;
+
+ArrayList shapes;
+
+ArrayList<Player> players = new ArrayList<Player>();
+boolean[] keys = new boolean[526];
+
+boolean Home = true;
+boolean Instructions = false;
+boolean Game = false;
+boolean Active = false;
+boolean G_Over = false;
+
+int points = 0;
+int paddle = 200;
+int[][] blox = new int [54][5];
+int ballX, ballY;
+float bSpeedX, bSpeedY;
+
+// resolution
+boolean devMode = false;
+boolean sketchFullScreen() {
+  return ! devMode;
+}
+
+void setup()
+{
+  setUpPlayerControllers();
+
+  font = loadFont("BuxtonSketch-200.vlw");
+  font2 = loadFont("KaiTi-50.vlw");
+  size(600, 600);
+  shapes = new ArrayList();
+  smooth();
+
+  // res
+  if (devMode)
+  {
+    size(600, 600);
+  } else
+  {
+    size(displayWidth, displayHeight);
+  }
+} // end setup
+
+void draw()
+{
+  for (Player player : players)
+  {
+    player.update();
+    player.display();
+  }
+
+  frameRate(10);
   background(0);
 
-  textSize(60);
-  text("POINTS: " + points, width/2, height/2);
-
-  for (int i = 0; i < 54; i++)
+  if (Home == true)
   {
-    for (int j = 0; j < 5; j++)
+    shapes.add(new Block());
+
+    for (int i = 0; i < shapes.size (); i++)
     {
-      if (Active == false)
-      {
-        blox[i][j] = 1;
-        fill(random(255), random(255), random(255));
-      }
+      Shape s = (Shape) shapes.get(i);
+      s.display();
+    }
 
-      rect(i*25, j*25+25, 25, 25);
-    } // end for
-  } // end for
-
-  rect(mouseX-paddle/2, height-25, paddle, height);
-
-  if (Active == true)
-  {
-    if ((ballY >= height-25) && (ballX > mouseX-paddle/2) && (ballX < mouseX+paddle/2))
+    if (shapes.size() > 10) // remove after 10 shapes are on screen
     {
-      bSpeedY = -bSpeedY;
-      bSpeedX = bSpeedX/abs(bSpeedX)*map(abs(ballX-mouseX), 0, paddle/2, 1, 5);
-      points++;
-    } // end if
+      shapes.remove(0);
+    }
 
-    if (ballY < 0)
+    textFont(font, 200);
+    text("Blox", width/3, height/3);
+    fill(255, 0, 0);
+    textFont(font2, 20);
+    text("Press START button to play", 550, 300);
+  } // end Home
+
+  if (keyPressed)
+  { 
+    if (key == 'q' || key == 'Q')
     {
-      bSpeedY = -bSpeedY;
-    } // end if
+      Game = true;
+      Home = false;
+    } // end key
+  } // end keyPessed
+} // end draw
 
-    if ((ballX >= width-25)||(ballX < 0))
-    {
-      bSpeedX = -bSpeedX;
-    } // end if
-  } // end if
-
-  else 
-  {
-    bSpeedX = 0;
-    bSpeedY = 0;
-    ballX = mouseX-10;
-    ballY = height-30;
-  } // end else
-
-  if (ballY > height-25)
-  {
-    text("GAME OVER", width/2, height/2);
-    noLoop();
-    G_Over = true;
-    Game = false;
-  } // end if
-
-  ballX+= bSpeedX; 
-  ballY+= bSpeedY;
-
-  rect(ballX, ballY, 16, 16);
-
-  for (int i = 0; i < 54; i++)
-  {
-    for (int j = 0; j < 5; j++)
-    {
-      if ((blox[i][j] == 1) && (ballX > i*25) && (ballX < (i+1)*25) && (ballY < (j+1)*25 + 25))
-      {
-        blox[i][j] = 0;
-        points++;
-        bSpeedY = -bSpeedY;
-      } // end if
-    } // end for
-  } // end for
-} // end Game
-
-void mouseClicked()
+// controls and XML
+void keyPressed()
 {
+  keys[keyCode] = true;
+}
 
-  bSpeedX = 10;
-  bSpeedY = 50;
-  Active = true;
+void keyReleased()
+{
+  keys[keyCode] = false;
+}
+
+boolean checkKey(char theKey)
+{
+  return keys[Character.toUpperCase(theKey)];
+}
+
+char buttonNameToKey(XML xml, String buttonName)
+{
+  String value =  xml.getChild(buttonName).getContent();
+  if ("LEFT".equalsIgnoreCase(value))
+  {
+    return LEFT;
+  }
+  if ("RIGHT".equalsIgnoreCase(value))
+  {
+    return RIGHT;
+  }
+  if ("UP".equalsIgnoreCase(value))
+  {
+    return UP;
+  }
+  if ("DOWN".equalsIgnoreCase(value))
+  {
+    return DOWN;
+  }
+  //.. Others to follow
+  return value.charAt(0);
+}
+
+void setUpPlayerControllers()
+{
+  XML xml = loadXML("arcade.xml");
+  XML[] children = xml.getChildren("player");
+  int gap = width / (children.length + 1);
+
+  for (int i = 0; i < children.length; i ++)  
+  {
+    XML playerXML = children[i];
+    Player p = new Player(
+    i
+      , color(random(0, 255), random(0, 255), random(0, 255))
+      , playerXML);
+    int x = (i + 1) * gap;
+    p.pos.x = x;
+    p.pos.y = 300;
+    players.add(p);
+  }
 }
 

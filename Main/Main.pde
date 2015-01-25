@@ -1,5 +1,3 @@
-// Instructions dekho > dekha
-
 PFont font, font2;
 
 ArrayList shapes;

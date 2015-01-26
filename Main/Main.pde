@@ -12,7 +12,7 @@ boolean Game = true;
 boolean Active = false; // Game to start
 boolean G_Over = false;
 
-int i = 10;
+int i = 10; // Shapes
 
 int points = 0; // Player points
 int paddle = 200; // Player

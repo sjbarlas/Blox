@@ -1,3 +1,7 @@
+// Ball ko theek
+// Game Ove banao
+// Game screen theek
+
 void Game()
 { 
   background(0); // Black

@@ -6,13 +6,13 @@ ArrayList<Player> players = new ArrayList<Player>();
 boolean[] keys = new boolean[526];
 
 // Screens
-boolean Home = true;
+boolean Home = false;
 boolean Instructions = false;
-boolean Game = false;
+boolean Game = true;
 boolean Active = false; // Game to start
 boolean G_Over = false;
 
-// int i = 10;
+int i = 10;
 
 int points = 0; // Player points
 int paddle = 200; // Player

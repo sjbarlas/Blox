@@ -1,18 +1,18 @@
 void Game()
 { 
-  background(0);
+  background(0); // Black
 
   textSize(60);
-  text("POINTS: " + points, width/2, height/2);
+  text("POINTS: " + points, width/2, height/2); // Points of player
 
-  for (int i = 0; i < 54; i++)
+  for (int i = 0; i < 54; i++) 
   {
     for (int j = 0; j < 5; j++)
     {
-      if (Active == false)
+      if (Active == false) // Playing mode
       {
-        blox[i][j] = 1;
-        fill(random(255), random(255), random(255));
+        blox[i][j] = 1; 
+        fill(random(255), random(255), random(255)); // Colour of blox
       }
 
       rect(i*25, j*25+25, 25, 25);

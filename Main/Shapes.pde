@@ -6,13 +6,13 @@ class Shape
   // CONSTRUCTOR
   Shape()
   {
-    pos = new PVector(random(0, displayWidth), random(0, displayHeight));
+    pos = new PVector(random(0, displayWidth), random(0, displayHeight)); // depending on screen resolution
   } // end Constructor
 
   // FUNCTIONS
   void display()
   {
-    fill(random(255), random(255), random(255));
+    fill(random(255), random(255), random(255)); // random colours
   } // end display()
 } // end Shape
 

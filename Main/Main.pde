@@ -94,15 +94,12 @@ void draw()
   } // end Home
 
 
-  if (keyPressed)
-  { 
-    if (key == 'q' || key == 'Q')
-    {
-      Home = false;
-      Game = true;
-      Game();
-    } // end key
-  } // end if
+  if (key == 'q' || key == 'Q')
+  {
+    Home = false;
+    Game = true;
+    Game();
+  } // end key
 } // end draw
 
 // controls and XML

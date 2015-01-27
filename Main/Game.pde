@@ -7,7 +7,7 @@ void Game()
     background(0); // Black
 
     textSize(60);
-    text("POINTS: " + points, width/2, height/2); // Points of player
+    text("POINTS: " + points, 500, 300); // Points of player
 
     // Number of blox
     for (int i = 0; i < 60; i++) 

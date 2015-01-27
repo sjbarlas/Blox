@@ -60,8 +60,6 @@ void Game()
     {
       text("GAME OVER", width/2, height/2);
       noLoop();
-      G_Over = true;
-      Game = false;
     } // end if
 
     ballX+= bSpeedX; 

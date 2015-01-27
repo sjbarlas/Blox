@@ -17,14 +17,10 @@ void Game()
           // different blox colours
           blox[i][j] = 1; 
           fill(random(255), random(255), random(255)); // Colour of blox
-        }
-        
-        else if (blox[i][j] == 0)
+        } else if (blox[i][j] == 0)
         {
           fill(0);
-        }
-        
-        else
+        } else
         {
           fill(random(255), random(255), random(255));
         }
@@ -76,7 +72,7 @@ void Game()
     ballY+= bSpeedY;
 
     rect(ballX, ballY, 16, 16); // ball
-    
+
     // hitting the bricks with the ball
     for (int i = 0; i < 60; i++)
     {

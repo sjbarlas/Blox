@@ -4,7 +4,6 @@ void Instructions()
   textFont(font, 200);
   text("Blox", width/3, height/3); // Text of "Blox"
   line(460, 260, 900, 260);
-  
 
   textFont(font2, 50);
   text("> Use the controls to move the paddle right and left", 30, 400);

@@ -99,6 +99,7 @@ void draw()
     {
       Game = true; // Game screen appears
       Home = false; // Home screen disappears
+      Game();
     } // end key
   } // end keyPessed
 } // end draw

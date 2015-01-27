@@ -81,7 +81,7 @@ void Game()
         } // end if
       } // end for
     } // end for
-  } //end Game
+  } // end Game
 } // end Game
 
 void mouseClicked()

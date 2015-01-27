@@ -1,12 +1,9 @@
 void Screens()
 {
-  if (keyPressed)
-  { 
-    if (key == 'q' || key == 'Q')
-    {
-      Game = true; // Game screen appears
-      Home = false; // Home screen disappears
-      Game();
-    } // end key
-  } // end if
+  if (key == 'q' || key == 'Q')
+  {
+    Home = false;
+    Game = true;
+    Game();
+  } // end key
 } // end Screens

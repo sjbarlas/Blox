@@ -58,8 +58,8 @@ void Game()
 
     if (ballY > height-25)
     {
-      text("GAME OVER", width/2, height/2);
-      noLoop();
+      G_Over = true;
+      G_Over();
     } // end if
 
     ballX+= bSpeedX; 

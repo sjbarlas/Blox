@@ -1,7 +1,3 @@
-// Ball ko theek
-// Game Ove KO !!! banao
-// Game screen theek
-
 void Game()
 { 
   if (Game == true)

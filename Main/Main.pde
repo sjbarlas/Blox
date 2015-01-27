@@ -93,15 +93,17 @@ void draw()
     text("Press START button to play", 30, 700); // Foreground bottom
   } // end Home
 
-  if (keyPressed)
-  { 
-    if (key == 'q' || key == 'Q')
-    {
-      Game = true; // Game screen appears
-      Home = false; // Home screen disappears
-      Game();
-    } // end key
-  } // end keyPessed
+  Screens();
+
+  //  if (keyPressed)
+  //  { 
+  //    if (key == 'q' || key == 'Q')
+  //    {
+  //      Game = true; // Game screen appears
+  //      Home = false; // Home screen disappears
+  //      Game();
+  //    } // end key
+  // } // end keyPessed
 } // end draw
 
 // controls and XML

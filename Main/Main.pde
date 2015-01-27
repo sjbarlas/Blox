@@ -1,3 +1,5 @@
+// Main with main stuff
+
 PFont font, font2;
 
 ArrayList shapes; // Blocks for the background
@@ -6,11 +8,11 @@ ArrayList<Player> players = new ArrayList<Player>();
 boolean[] keys = new boolean[526];
 
 // Screens
-boolean Home = true;
-boolean Instructions = false;
-boolean Game = false;
+boolean Home = true; // Home screen
+boolean Instructions = false; // instructions screen
+boolean Game = false; // Game screen
 boolean Active = false; // Game to start
-boolean G_Over = false;
+boolean G_Over = false; // Game Over
 
 int i = 10; // Shapes
 
@@ -96,9 +98,13 @@ void draw()
   if (key == 'q' || key == 'Q')
   {
     Home = false;
+    //Instructions = true;
+    //Instructions();
     Game = true;
     Game();
   }
+  
+  // Game();
   
   if (G_Over == true)
   {

@@ -119,15 +119,7 @@ void draw()
   // GAME OVER
   if (G_Over == true)
   {
-    Home = false;
     G_Over();
-    Game();
-  }
-
-  if (key == 'e' || key == 'E')
-  {
-    Game = true;
-    Game();
   }
 } // end draw
 

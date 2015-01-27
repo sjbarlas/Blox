@@ -8,6 +8,6 @@ void G_Over()
   text("POINTS: "+ points, 450, 300);
 
   fill(255, 255, 0);
-  text("Press BUTTON 1 to play again", 20, 700); // Foreground bottom
+  text("Restart the game to play", 70, 650); // Foreground bottom
+  text("again", 600, 725);
 }
-

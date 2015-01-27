@@ -12,7 +12,7 @@ void Game()
     text("POINTS: " + points, width/2, height/2); // Points of player
 
     // Number of blox
-    for (int i = 0; i < 30; i++) 
+    for (int i = 0; i < 54; i++) 
     {
       for (int j = 0; j < 5; j++)
       {
@@ -67,7 +67,7 @@ void Game()
 
     rect(ballX, ballY, 16, 16);
 
-    for (int i = 0; i < 30; i++)
+    for (int i = 0; i < 54; i++)
     {
       for (int j = 0; j < 5; j++)
       {

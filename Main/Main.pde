@@ -16,7 +16,7 @@ int i = 10; // Shapes
 
 int points = 0; // Player points
 int paddle = 200; // Player
-int[][] blox = new int [30][5]; // Generating blox
+int[][] blox = new int [54][5]; // Generating blox
 int ballX, ballY; // Ball
 float bSpeedX, bSpeedY; // Ball speed
 

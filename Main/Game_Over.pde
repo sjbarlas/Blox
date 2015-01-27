@@ -1,13 +1,5 @@
 void G_Over()
 {
-  if (G_Over = true)
-  {
-    text("GAME OVER", width/2, height/2);
-    noLoop();
-  }
+  background(0);
+  text("GAME OVER", width/2, height/2);
 }
-
-// Boxxes dalo
-// Comments dalo
-// Aise wase cheezen
-

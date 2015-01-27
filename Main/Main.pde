@@ -99,6 +99,11 @@ void draw()
     Game = true;
     Game();
   }
+  
+  if (G_Over == true)
+  {
+    G_Over();
+  }
 } // end draw
 
 // controls and XML

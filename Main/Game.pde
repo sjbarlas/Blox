@@ -64,7 +64,8 @@ void Game()
     if (ballY > height-6) // paddle doesn't hit the ball
     {
       G_Over = true;
-      G_Over();
+      Game = false;
+      noLoop();
     } // end if
 
     // X and Y speed of the ball

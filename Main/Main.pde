@@ -1,6 +1,6 @@
 // Main with main stuff
 
-PFont font, font2;
+PFont font, font2, font3;
 
 ArrayList shapes; // Blocks for the background
 
@@ -92,20 +92,30 @@ void draw()
 
     fill(255, 255, 0);
     textFont(font2, 100);
-    text("Press START button to play", 30, 700); // Foreground bottom
+    text("Press RIGHT button to play", 30, 700); // Foreground bottom
   } // end Home
 
+  // INSTRUCTIONS
+  if (key == CODED)
+  {
+    if (keyCode == RIGHT)
+    {
+      Home = false;
+      Instructions = true;
+      Instructions();
+    }
+  }
+
+  // GAME
   if (key == 'q' || key == 'Q')
   {
+    Instructions = false;
     Home = false;
-    //Instructions = true;
-    //Instructions();
     Game = true;
     Game();
   }
-  
-  // Game();
-  
+
+  // GAME OVER
   if (G_Over == true)
   {
     G_Over();

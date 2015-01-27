@@ -111,6 +111,7 @@ void draw()
   {
     Instructions = false;
     Home = false;
+    G_Over = false;
     Game = true;
     Game();
   }
@@ -118,7 +119,15 @@ void draw()
   // GAME OVER
   if (G_Over == true)
   {
+    Home = false;
     G_Over();
+    Game();
+  }
+
+  if (key == 'e' || key == 'E')
+  {
+    Game = true;
+    Game();
   }
 } // end draw
 

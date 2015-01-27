@@ -8,14 +8,6 @@ void G_Over()
   text("POINTS: "+ points, 450, 300);
 
   fill(255, 255, 0);
-  text("Insert a coin to play again!", 5, 700); // Foreground bottom
-
-  if (key == '5' || key == '5')
-  {
-    Home = false;
-    G_Over = false;
-    Game = true;
-    Game();
-  }
+  text("Press BUTTON 1 to play again", 20, 700); // Foreground bottom
 }
 

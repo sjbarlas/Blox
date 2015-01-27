@@ -9,5 +9,7 @@ void Instructions()
   text("> Use the controls to move the paddle right and left", 30, 400);
   text("> Use the paddle to hit the blox", 30, 500);
   text("> If the ball is out of the screen, it's GAME OVER", 30, 600);
+  textFont(font2, 50);
+  text("Press START button to play", 330, 700); // Foreground bottom
 }
 

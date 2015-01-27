@@ -6,9 +6,9 @@ ArrayList<Player> players = new ArrayList<Player>();
 boolean[] keys = new boolean[526];
 
 // Screens
-boolean Home = false;
+boolean Home = true;
 boolean Instructions = false;
-boolean Game = true;
+boolean Game = false;
 boolean Active = false; // Game to start
 boolean G_Over = false;
 
@@ -16,7 +16,7 @@ int i = 10; // Shapes
 
 int points = 0; // Player points
 int paddle = 200; // Player
-int[][] blox = new int [54][5]; // Generating blox
+int[][] blox = new int [30][5]; // Generating blox
 int ballX, ballY; // Ball
 float bSpeedX, bSpeedY; // Ball speed
 

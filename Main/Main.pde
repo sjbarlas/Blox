@@ -34,6 +34,7 @@ void setup()
 
   font = loadFont("BuxtonSketch-200.vlw");
   font2 = loadFont("KaiTi-100.vlw");
+  font3 = loadFont("KaiTi-50.vlw");
   size(600, 600);
   shapes = new ArrayList();
   smooth();

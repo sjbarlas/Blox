@@ -1,4 +1,5 @@
 Retro game based on Araknoid
+---
 
 Home screen:
 ![alt text](http://i.imgur.com/pIjmM1y.png "home")

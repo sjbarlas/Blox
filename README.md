@@ -1,4 +1,4 @@
-Retro game based on Araknoid
+Retro game based on simple Araknoid
 ---
 
 Home screen:

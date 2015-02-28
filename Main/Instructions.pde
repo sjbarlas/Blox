@@ -1,6 +1,5 @@
 // Instructions screen
 int j = 100;
-int f = 100;
 
 void Instructions()
 {

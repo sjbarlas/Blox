@@ -1,8 +1,26 @@
 // Instructions screen
+int j = 100;
+int f = 50;
 
 void Instructions()
 {
-  background(0);
+  // Dotted background
+  for (int x = 0; x < width; x+=j)
+  {
+    for (int y = 0; y < height; y+=j)
+    {
+      line(x + 0, y + 0, x + 10, y + 10);
+    } //  end for
+  } // end for
+
+  for (int x = 0; x < width; x+=f)
+  {
+    for (int y = 0; y < height; y+=f)
+    {
+      line(x + 0, y + 0, x + 10, y + 0);
+    } //  end for
+  } // end for
+
   textFont(font, 200);
   text("Blox", width/3, height/3); // Text of "Blox"
   line(460, 260, 900, 260);

@@ -9,8 +9,8 @@ void Instructions()
     for (int y = 0; y < height; y+=j)
     {
       stroke(random(255), random(255), random(255));
-      line(x + 0, y + 0, x + 10, y + 10);
-      line(x + 0, y + 10, x + 10, y + 0);
+      line(x + 0, y + 0, x + 5, y + 5);
+      line(x + 0, y + 5, x + 5, y + 0);
     } //  end for
   } // end for
 

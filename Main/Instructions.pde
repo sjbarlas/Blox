@@ -8,6 +8,7 @@ void Instructions()
   {
     for (int y = 0; y < height; y+=j)
     {
+      stroke(255);
       line(x + 0, y + 0, x + 10, y + 10);
       line(x + 0, y + 10, x + 10, y + 0);
     } //  end for

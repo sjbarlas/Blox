@@ -3,7 +3,7 @@ int j = 100;
 
 void Instructions()
 {
-  // Dotted background
+
   for (int x = 0; x < width; x+=j)
   {
     for (int y = 0; y < height; y+=j)

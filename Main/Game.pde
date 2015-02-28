@@ -49,7 +49,7 @@ void Game()
         bSpeedY = -bSpeedY;
       } // end if
 
-      if ((ballX >= width-16)||(ballX < 0)) // hits side
+      if ((ballX >= width-16) || (ballX < 0)) // hits side
       {
         bSpeedX = -bSpeedX;
       } // end if

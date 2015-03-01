@@ -1,6 +1,6 @@
 // Main with main stuff
 
-PFont font, font2, font3;
+PFont font, font2, font3; // needs correction 
 
 ArrayList shapes; // Blocks for the background
 

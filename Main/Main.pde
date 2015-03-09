@@ -31,6 +31,8 @@ boolean sketchFullScreen() {
 void setup()
 {
   setUpPlayerControllers();
+  
+  frame.setTitle("Blox");
 
   font = loadFont("BuxtonSketch-200.vlw");
   font2 = loadFont("KaiTi-100.vlw");

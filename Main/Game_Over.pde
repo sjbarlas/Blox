@@ -1,4 +1,4 @@
-// Game Over screen NEEDED
+// Game Over screen
 
 void G_Over()
 {

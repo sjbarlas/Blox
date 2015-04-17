@@ -99,4 +99,3 @@ void mouseClicked()
   bSpeedY = 30;
   Active = true;
 }
-

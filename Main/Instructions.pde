@@ -25,4 +25,3 @@ void Instructions()
   textFont(font3, 50);
   text("Press START button to play", 330, 700); // Foreground bottom
 }
-

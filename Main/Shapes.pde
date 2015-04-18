@@ -27,4 +27,3 @@ class Block extends Shape
     rect(pos.x, pos.y, 70, 70);
   } // end display()
 } // end class Block
-

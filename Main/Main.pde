@@ -184,4 +184,3 @@ void setUpPlayerControllers()
     players.add(p);
   }
 }
-

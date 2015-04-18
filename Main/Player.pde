@@ -85,4 +85,3 @@ class Player
     rect(pos.x, pos.y, 20, 20);
   }
 }
-
